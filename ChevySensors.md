@@ -1,4 +1,4 @@
-# Chevrolet / GM CAN Bus Signal Reference (Extended)
+# Chevrolet / GM CAN Bus Signal Reference
 
 ## Network Types
 - High Speed CAN (Powertrain): 500 kbps
