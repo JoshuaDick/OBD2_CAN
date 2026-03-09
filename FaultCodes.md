@@ -1,204 +1,250 @@
-# Fault code categories
-* B: Body system
-* C: Chassis system
-* P: Powertrain
-* U: Network and vehicle integration system
+# Chevrolet / GM OBD-II Diagnostic Trouble Codes (DTC)
 
-# Common Chevy Powertrain (P) Fault Codes
+## Code Prefix Categories
+* Pxxxx – Powertrain (engine, transmission)
+* Bxxxx – Body systems
+* Cxxxx – Chassis systems
+* Uxxxx – Network / communication systems
 
-## Airflow / Intake Sensors
-* P0030: HO2S heater control circuit (bank 1 sensor 1)
-* P0036: HO2S heater control circuit (bank 1 sensor 2)
+---
 
-* P0101: Problem with mass airflow sensor
-* P0102: Low mass airflow circuit
-* P0103: High mass airflow circuit
-* P0104: Mass airflow circuit intermittent
+# P Codes (Powertrain)
 
-* P0105: Manifold absolute pressure circuit malfunction
-* P0106: Manifold absolute pressure/performance problem
-* P0107: Manifold absolute pressure/low barometric pressure circuit
-* P0108: Manifold absolute pressure/high barometric pressure circuit
-* P0109: Manifold absolute pressure/barometric pressure circuit intermittent
+## Air / Fuel Metering
 
-* P0110: Intake air temperature circuit
-* P0111: Intake air temperature circuit range/performance problem
-* P0112: Low intake air temperature circuit
-* P0113: High intake air temperature circuit
-* P0114: Intake air temperature circuit intermittent
+P0100 Mass or Volume Air Flow Circuit Malfunction
+P0101 Mass Air Flow Sensor Range/Performance
+P0102 Mass Air Flow Circuit Low Input
+P0103 Mass Air Flow Circuit High Input
+P0104 Mass Air Flow Circuit Intermittent
 
-## Coolant / Temperature
-* P0115: Engine coolant temperature circuit malfunction
-* P0116: Engine coolant temperature circuit range/performance problem
-* P0117: Low engine coolant temperature circuit
-* P0118: High engine coolant temperature circuit
-* P0119: Engine coolant temperature circuit intermittent
+P0105 MAP Sensor Circuit Malfunction
+P0106 MAP Sensor Range/Performance
+P0107 MAP Sensor Low Input
+P0108 MAP Sensor High Input
+P0109 MAP Sensor Intermittent
 
-## Throttle / Pedal Position
-* P0120: Throttle/pedal position sensor/switch "A" circuit malfunction
-* P0121: Throttle/pedal position sensor/switch "A" circuit range/performance problem
-* P0122: Throttle/pedal position sensor/switch "A" circuit low input
-* P0123: High throttle/pedal position sensor/switch "A" circuit
-* P0124: Throttle/pedal position sensor/switch "A" circuit intermittent
-* P0222: Throttle actuator control circuit low voltage
-* P0223: Throttle actuator control circuit high voltage
-* P0510: Throttle position switch circuit malfunction
+P0110 Intake Air Temperature Circuit Malfunction
+P0111 Intake Air Temperature Range/Performance
+P0112 Intake Air Temperature Low Input
+P0113 Intake Air Temperature High Input
+P0114 Intake Air Temperature Intermittent
 
-## Temperature / Engine Operation
-* P0125: Insufficient coolant temperature for closed loop fuel control
-* P0126: Insufficient coolant temperature for stable operation
-* P0127: Intake air temperature too high
-* P0128: Coolant thermostat (coolant temperature below thermostat regulating temperature)
-* P0129: Barometric pressure too low
+P0115 Engine Coolant Temperature Circuit
+P0116 Engine Coolant Temperature Range/Performance
+P0117 Engine Coolant Temperature Low Input
+P0118 Engine Coolant Temperature High Input
+P0119 Engine Coolant Temperature Intermittent
 
-## Oxygen Sensor (O2 / HO2S)
-* P0130: O2 sensor circuit malfunction (bank 1 sensor 1)
-* P0131: O2 sensor circuit low voltage (bank 1 sensor 1)
-* P0132: O2 sensor circuit high voltage (bank 1 sensor 1)
-* P0133: O2 sensor circuit slow response (bank 1 sensor 1)
-* P0134: O2 sensor circuit no activity detected (bank 1 sensor 1)
-* P0135: O2 sensor heater circuit malfunction (bank 1 sensor 1)
+P0120 Throttle Position Sensor Circuit
+P0121 Throttle Position Sensor Range/Performance
+P0122 Throttle Position Sensor Low Input
+P0123 Throttle Position Sensor High Input
+P0124 Throttle Position Sensor Intermittent
 
-* P0136: O2 sensor circuit malfunction (bank 1 sensor 2)
-* P0137: O2 sensor circuit low voltage (bank 1 sensor 2)
-* P0138: O2 sensor circuit high voltage (bank 1 sensor 2)
-* P0139: O2 sensor circuit slow response (bank 1 sensor 2)
-* P0140: O2 sensor circuit no activity detected (bank 1 sensor 2)
-* P0141: O2 sensor heater circuit malfunction (bank 1 sensor 2)
+P0125 Insufficient Coolant Temperature for Closed Loop
+P0126 Insufficient Coolant Temperature for Stable Operation
+P0127 Intake Air Temperature Too High
+P0128 Coolant Thermostat Below Regulating Temperature
+P0129 Barometric Pressure Too Low
 
-## Fuel / Air Mixture
-* P0171: Fuel trim system too lean
-* P0172: Fuel trim system too rich
-* P1166: Lean condition at full load
+---
 
-## Injector Circuits
-* P0201: Injector control circuit cylinder 1
-* P0202: Injector control circuit cylinder 2
-* P0203: Injector control circuit cylinder 3
-* P0204: Injector control circuit cylinder 4
+## Oxygen Sensor Codes
 
-* P0261: Injector cylinder 1 low control signal
-* P0262: Injector cylinder 1 high control signal
-* P0264: Injector cylinder 2 low control signal
-* P0265: Injector cylinder 2 high control signal
-* P0267: Injector cylinder 3 low control signal
-* P0268: Injector cylinder 3 high control signal
-* P0270: Injector cylinder 4 low control signal
-* P0271: Injector cylinder 4 high control signal
+P0130 O2 Sensor Circuit Malfunction (Bank 1 Sensor 1)
+P0131 O2 Sensor Circuit Low Voltage (B1S1)
+P0132 O2 Sensor Circuit High Voltage (B1S1)
+P0133 O2 Sensor Circuit Slow Response (B1S1)
+P0134 O2 Sensor Circuit No Activity (B1S1)
+P0135 O2 Sensor Heater Circuit (B1S1)
 
-## Ignition / Misfire
-* P0300: Random/multiple misfire detected
-* P0315: Crankshaft position system variation not learned
-* P0317: No input signal from rough road detection system
+P0136 O2 Sensor Circuit Malfunction (B1S2)
+P0137 O2 Sensor Circuit Low Voltage (B1S2)
+P0138 O2 Sensor Circuit High Voltage (B1S2)
+P0139 O2 Sensor Slow Response (B1S2)
+P0140 O2 Sensor No Activity (B1S2)
+P0141 O2 Sensor Heater Circuit (B1S2)
 
-* P0324: Knock sensor module performance
-* P0325: Knock sensor circuit
-* P0327: Knock sensor low input
+P0142 O2 Sensor Low Voltage (B1S3)
+P0143 O2 Sensor High Voltage (B1S3)
+P0144 O2 Sensor Slow Response (B1S3)
+P0145 O2 Sensor No Activity (B1S3)
+P0146 O2 Sensor Circuit Malfunction (B1S3)
+P0147 O2 Sensor Heater Circuit (B1S3)
 
-## Crankshaft / Camshaft Sensors
-* P0335: Crankshaft position sensor circuit malfunction
-* P0336: Crankshaft position sensor performance
-* P0337: Crankshaft position sensor no signal
+---
 
-* P0340: Camshaft position sensor circuit
-* P0341: Camshaft position sensor range/performance
-* P0342: Camshaft position sensor no signal
+## Fuel System
 
-## Ignition Coil Control
-* P0351: Ignition coil control circuit cylinders 1 and 4
-* P0352: Ignition coil control circuit cylinders 2 and 3
+P0171 System Too Lean Bank 1
+P0172 System Too Rich Bank 1
+P0173 Fuel Trim Malfunction
+P0174 System Too Lean Bank 2
+P0175 System Too Rich Bank 2
 
-## Exhaust Gas Recirculation (EGR)
-* P0400: Exhaust gas recirculation flow malfunction
-* P0401: EGR insufficient flow
-* P0402: EGR excessive flow
-* P0403: EGR control circuit malfunction
-* P0404: EGR valve performance
-* P0405: EGR sensor low voltage
-* P0406: EGR sensor high voltage
-* P042E: EGR stuck closed performance
+---
 
-## Catalytic Converter
-* P0420: Catalyst system efficiency below threshold
+## Injector Circuit
+
+P0200 Injector Circuit Malfunction
+P0201 Injector Circuit Cylinder 1
+P0202 Injector Circuit Cylinder 2
+P0203 Injector Circuit Cylinder 3
+P0204 Injector Circuit Cylinder 4
+P0205 Injector Circuit Cylinder 5
+P0206 Injector Circuit Cylinder 6
+
+P0261 Injector Circuit Low Cylinder 1
+P0262 Injector Circuit High Cylinder 1
+P0263 Cylinder Contribution/Balance 1
+P0264 Injector Circuit Low Cylinder 2
+P0265 Injector Circuit High Cylinder 2
+P0266 Cylinder Contribution/Balance 2
+P0267 Injector Circuit Low Cylinder 3
+P0268 Injector Circuit High Cylinder 3
+P0269 Cylinder Contribution/Balance 3
+P0270 Injector Circuit Low Cylinder 4
+P0271 Injector Circuit High Cylinder 4
+P0272 Cylinder Contribution/Balance 4
+
+---
+
+## Misfire Detection
+
+P0300 Random/Multiple Misfire
+P0301 Cylinder 1 Misfire
+P0302 Cylinder 2 Misfire
+P0303 Cylinder 3 Misfire
+P0304 Cylinder 4 Misfire
+P0305 Cylinder 5 Misfire
+P0306 Cylinder 6 Misfire
+
+---
+
+## Knock / Timing Sensors
+
+P0325 Knock Sensor Circuit
+P0326 Knock Sensor Range
+P0327 Knock Sensor Low Input
+P0328 Knock Sensor High Input
+
+P0335 Crankshaft Position Sensor Circuit
+P0336 Crankshaft Position Sensor Range
+P0337 Crankshaft Sensor Low Input
+P0338 Crankshaft Sensor High Input
+P0339 Crankshaft Sensor Intermittent
+
+P0340 Camshaft Position Sensor Circuit
+P0341 Camshaft Sensor Range
+P0342 Camshaft Sensor Low Input
+P0343 Camshaft Sensor High Input
+P0344 Camshaft Sensor Intermittent
+
+---
+
+## Exhaust Gas Recirculation
+
+P0400 EGR Flow Malfunction
+P0401 EGR Insufficient Flow
+P0402 EGR Excessive Flow
+P0403 EGR Control Circuit
+P0404 EGR Range/Performance
+P0405 EGR Sensor Low
+P0406 EGR Sensor High
+
+---
+
+## Catalyst
+
+P0420 Catalyst Efficiency Below Threshold (Bank 1)
+P0430 Catalyst Efficiency Below Threshold (Bank 2)
+
+---
 
 ## EVAP System
-* P0443: EVAP purge valve control circuit
-* P0444: EVAP purge valve no signal
-* P0445: EVAP purge valve circuit malfunction
 
-## Fuel Level
-* P0461: Fuel level sensor performance
-* P0462: Fuel level sensor low voltage
-* P0463: Fuel level sensor high voltage
+P0440 EVAP System Malfunction
+P0441 EVAP Incorrect Purge Flow
+P0442 EVAP Small Leak
+P0443 EVAP Purge Valve Circuit
+P0444 EVAP Purge Valve Open
+P0445 EVAP Purge Valve Short
+P0446 EVAP Vent Control Circuit
 
-## Cooling / Fan Control
-* P0480: Cooling fan relay circuit low speed
-* P0481: Cooling fan relay circuit high speed
+---
 
 ## Vehicle Speed / Idle
-* P0501: Vehicle speed sensor no signal
-* P0502: Vehicle speed sensor low input
-* P0506: Idle speed low
-* P0507: Idle speed high
 
-## A/C System
-* P0532: A/C refrigerant pressure sensor low voltage
-* P0533: A/C refrigerant pressure sensor high voltage
+P0500 Vehicle Speed Sensor Malfunction
+P0501 Vehicle Speed Sensor Range
+P0502 Vehicle Speed Sensor Low
+P0503 Vehicle Speed Sensor Intermittent
+
+P0505 Idle Air Control System
+P0506 Idle Speed Low
+P0507 Idle Speed High
+
+---
 
 ## Electrical System
-* P0562: System voltage low
-* P0563: System voltage high
+
+P0562 System Voltage Low
+P0563 System Voltage High
+
+---
 
 ## Engine Control Module
-* P0601: ECM checksum / ROM error
-* P0602: ECM programming error
-* P0604: ECM RAM error
-* P0605: ECM internal control module error
-* P0606: ECM processor fault
 
-## Fuel Pump / Relays
-* P0628: Fuel pump relay control circuit low
-* P0629: Fuel pump relay control circuit high
+P0601 Internal Control Module Memory Checksum
+P0602 Control Module Programming Error
+P0604 RAM Error
+P0605 ROM Error
+P0606 ECM Processor Fault
 
-## A/C Compressor Relay
-* P0646: A/C compressor relay control circuit low
-* P0647: A/C compressor relay control circuit high
+---
 
-## MIL / Indicator
-* P0650: Malfunction indicator lamp circuit
-* P1650: MIL control circuit high voltage
+## Fuel Pump / Relay
 
-## Intake Manifold Control
-* P0660: Intake manifold tuning valve control circuit
-* P0661: Intake manifold tuning valve low voltage
-* P0662: Intake manifold tuning valve high voltage
+P0627 Fuel Pump Control Circuit Open
+P0628 Fuel Pump Control Circuit Low
+P0629 Fuel Pump Control Circuit High
+
+---
 
 ## Transmission
-* P0700: Transmission control module fault
 
-## Rough Road / ABS Related
-* P1390: Rough road sensor circuit malfunction
-* P1391: Rough road sensor performance
-* P1392: Rough road sensor low voltage
-* P1393: Rough road sensor high voltage
-* P1396: Rough road sensor incorrect ABS data
-* P1397: No signal from ABS wheel speed sensor
+P0700 Transmission Control System Malfunction
 
-## Immobilizer / Security
-* P1610: Main relay circuit high voltage
-* P1611: Main relay circuit low voltage
-* P1628: No communication with immobilizer
-* P1629: Immobilizer incorrect calculation
-* P1631: Theft deterrent fuel enable signal incorrect
+---
 
-## Throttle Actuator
-* P2101: Throttle actuator control circuit fault
-* P2118: Throttle actuator mechanical fault
-* P2119: Idle air control functional error
+# U Codes (Network Communication)
 
-## Controller Timing
-* P2610: Ignition off timer controller performance
+U0001 High Speed CAN Communication Bus
 
-# Network / Communication (U Codes)
-* U0101: Lost communication with transmission control module (TCM)
-* U0167: Missing message from immobilizer
+U0100 Lost Communication With ECM
+U0101 Lost Communication With TCM
+U0102 Lost Communication With Transfer Case Module
+
+U0140 Lost Communication With Body Control Module
+U0151 Lost Communication With Restraints Control Module
+
+U0167 Lost Communication With Immobilizer
+
+---
+
+# B Codes (Body)
+
+B0020 Driver Frontal Deployment Loop
+B0051 Seat Belt Sensor
+
+---
+
+# C Codes (Chassis)
+
+C0035 Left Front Wheel Speed Sensor
+C0040 Right Front Wheel Speed Sensor
+C0045 Left Rear Wheel Speed Sensor
+C0050 Right Rear Wheel Speed Sensor
+
+C0196 Yaw Rate Sensor Circuit
